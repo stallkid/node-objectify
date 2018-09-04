@@ -9,7 +9,7 @@ A small library that manipulate arrays and objects
 
 ## Usage
 
-  let handler = require('./index');
+  let handler = require('@stallkid/node-objectify');
 
 let name = 'awesome-object';
 let array1 = [1,2,3,4];
@@ -18,9 +18,11 @@ let array3 = [3, '4'];
 let array4 = [1, 2, '9',];
 
 console.log(handler.objectify(name, array1, array2));
+
 Output = { 'awesome-object': [[1, 2, 3, 4], ['1', 4]] }
 
 console.log(handler.mergeArrayToObject(array3, array4, array1))
+
 Output = { object: [[3, '4'], [1, 2, '9'], [1, 2, 3, 4]] }
 
 ## Tests
