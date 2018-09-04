@@ -1,7 +1,7 @@
 Number Formatter
 =========
 
-A small library that adds commas to numbers
+A small library that manipulate arrays and objects
 
 ## Installation
 
