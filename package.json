@@ -1,6 +1,6 @@
 {
   "name": "@stallkid/node-objectify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A new way to manipulate an Object",
   "main": "index.js",
   "scripts": {
