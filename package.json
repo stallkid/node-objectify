@@ -1,0 +1,33 @@
+{
+  "name": "node-objectify",
+  "version": "0.1.0",
+  "description": "A new way to manipulate an Object",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stallkid/node-objectify.git"
+  },
+  "keywords": [
+    "node.js",
+    "node",
+    "node-object",
+    "objectify",
+    "object"
+  ],
+  "author": "stallkid <renan.asthusius@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stallkid/node-objectify/issues"
+  },
+  "homepage": "https://github.com/stallkid/node-objectify#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
