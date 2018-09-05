@@ -1,6 +1,7 @@
 'use strict';
 
 let expect = require('chai').expect;
+let util = require('../utils');
 let index = require('../index');
 
 describe('#objectify', function () {
@@ -70,4 +71,14 @@ describe('#Merge to Object', function () {
         let result = index.mergeToObject(arrOne,arrTwo,arrTree);
         expect(result).to.deep.equal( {'object': { '0': { '0': 'awesome', '1': 2, '2': 'element', '3': 4 }, '1': { '0': 'foo', '1': 'bar' }, '2': { '0': 'john', '1': 2, '2': 'doe' }}});
     });
+});
+describe('#Utils', function () {
+    describe('* To Object', function () {
+        it('should convert an array to object', function () {
+            let array = ['foo', 'bar', 7];
+            let result = util.toObject(array);
+            expect(result).to.deep.equal({ '0': 'foo', '1': 'bar', '2': 7 });
+        });
+    });
+    
 });
