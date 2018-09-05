@@ -46,7 +46,6 @@ exports.mergeToObject = function () {
         newObj[i] = utils.toObject(Array.prototype.slice.call(args[i]));
     }
     obj['object'] = newObj;
-    console.log(obj);
-    
+
     return obj;
 }
