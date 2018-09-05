@@ -28,7 +28,7 @@ pulate arrays and objects
 
 Output should be  '{ 'awesome-object': [[1, 2, 3, 4], ['1', 4]] }'
 
-  **mergeArrayInObject function to put arrays into an object with and generic name 'object'**
+  **mergeArrayInObject function to put arrays into an object with generic name 'object'**
 
   console.log(handler.mergeArrayInObject(array3, array4, array1));
 
