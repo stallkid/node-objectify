@@ -7,7 +7,7 @@ let utils = require('./utils');
  * @param {arguments}
  * @return {Object}
  */
-exports.objectify = function (name) {
+exports.nameObjectify = function (name) {
     let obj = new Object;
     let args = new Array;
     for (let i = 0; i < arguments.length; i++) {
@@ -23,7 +23,7 @@ exports.objectify = function (name) {
  * @param {arguments}
  * @return {Object}
  */
-exports.mergeArrayToObject = function () {
+exports.mergeArrayInObject = function () {
     let args = new Array;
     let obj = new Object;
     for (let i = 0; i < arguments.length; i++) {
@@ -33,4 +33,20 @@ exports.mergeArrayToObject = function () {
     return obj;
 }
 
-// mergeArrayToObject([1,2],[2,3]);
+/**
+ * Convert array to object and store inside another object
+ * @param {arguments}
+ * @return {Object}
+ */
+exports.mergeToObject = function () {
+    let args = arguments;
+    let obj = new Object;
+    let newObj = new Object;
+    for (let i = 0; i < args.length; i++) {
+        newObj[i] = utils.toObject(Array.prototype.slice.call(args[i]));
+    }
+    obj['object'] = newObj;
+    console.log(obj);
+    
+    return obj;
+}
