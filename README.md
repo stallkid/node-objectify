@@ -1,5 +1,7 @@
 Node-Objectify
 =========
+[![Build Status](https://travis-ci.org/stallkid/node-objectify.svg?branch=master)](https://travis-ci.org/stallkid/node-objectify)
+[![Coverage Status](https://coveralls.io/repos/github/stallkid/node-objectify/badge.png?branch=master)](https://coveralls.io/github/stallkid/node-objectify?branch=master)
 
 A small library that mani
 pulate arrays and objects
